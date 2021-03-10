@@ -1,15 +1,11 @@
-import React, { Component } from "react";
-import Header from "./Header";
-import Meta from "./Meta";
+import React from 'react';
 
-export default class Page extends Component {
-    render(){
-        return (
-            <div>
-                <Meta />
-                <Header />
-                {this.props.children}
-            </div>
-        );
-    }
+// eslint-disable-next-line react/prop-types
+export default function Page({ children }) {
+  return (
+    <div>
+      <p>I am page Component</p>
+      {children}
+    </div>
+  );
 }
